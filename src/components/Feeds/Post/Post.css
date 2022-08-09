@@ -9,6 +9,7 @@
 .post__body {
   flex: 1;
   padding: 10px;
+  max-width: fit-content;
 }
 
 .post__body > img {
