@@ -1,0 +1,72 @@
+.post {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--twitter-background);
+  padding-bottom: 10px;
+  padding-inline-end: 70px;
+}
+
+.post__body {
+  flex: 1;
+  padding: 10px;
+}
+
+.post__body > img {
+  border-radius: 20px;
+  width: 408px;
+  height: auto;
+}
+
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.post__headerDescription {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.post__headerText > h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-family: "chirp-bold", sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.post__badge {
+  font-size: 19px !important;
+  color: var(--twitter-color);
+  margin-inline: 3px;
+}
+
+.post__headerSpecial {
+  font-weight: 600;
+  font-size: 15px;
+  color: gray;
+  font-family: "chirp-regular", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.post__avatar {
+  padding: 20px;
+}
+
+.cardsContainer {
+  border-radius: 20px;
+  width: 408px;
+  height: 500px;
+}
+
+.cardWrapper {
+  margin-block-start: 30px;
+  margin-block-end: 60px;
+  width: 408px;
+  height: 500px;
+  perspective: 2000;
+  border-radius: 20px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}

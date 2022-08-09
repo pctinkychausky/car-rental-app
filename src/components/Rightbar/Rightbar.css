@@ -1,0 +1,37 @@
+.rightbar {
+  flex: 0.3;
+}
+.rightbar__input {
+  display: flex;
+  align-items: center;
+  background-color: var(--twitter-background);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.rightbar__input > input {
+  border: none;
+  background-color: var(--twitter-background);
+}
+
+.rightbar__searchIcon {
+  color: gray;
+}
+
+.rightbar__Container {
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+  height: 572px;
+  min-width: 288px;
+  font-family: "chirp-heavy", sans-serif;
+}
+
+.rightbar__Container > h2 {
+  font-size: 18px;
+  font-weight: 800;
+}

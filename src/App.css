@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "chirp-bold";
+  src: url("../src/assets/font/chirp-bold-web.ttf") format("truetype");
+}
+@font-face {
+  font-family: "chirp-heavy";
+  src: url("../src/assets/font/chirp-heavy-web.ttf") format("truetype");
+}
+@font-face {
+  font-family: "chirp-regular";
+  src: url("../src/assets/font/chirp-regular-web.ttf") format("truetype");
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "chirp-regular", sans-serif;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  --twitter-color: #50b7f5;
+  --twitter-background: #e6ecf0;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
