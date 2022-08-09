@@ -8,7 +8,7 @@ import PollOutlinedIcon from "@mui/icons-material/PollOutlined";
 import SentimentSatisfiedOutlinedIcon from "@mui/icons-material/SentimentSatisfiedOutlined";
 import PendingActionsOutlinedIcon from "@mui/icons-material/PendingActionsOutlined";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
-import myicon from "../../../assets/jason-icon.png";
+import myicon from "../../../assets/logo/jason-icon.png";
 import "./Tweet.css";
 
 function Tweet() {

@@ -1,0 +1,21 @@
+/* .card {
+  background-image: url(../../assets/img/carhire.jpg);
+  background-size: cover;
+} */
+.macbook {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.macbook img {
+  height: auto;
+  width: 360px;
+}
+
+.projects {
+  height: auto;
+  width: 360px;
+}

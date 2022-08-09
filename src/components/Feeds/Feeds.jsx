@@ -2,7 +2,7 @@ import React from "react";
 import "./Feeds.css";
 import Tweet from "./TweetInput/Tweet";
 import Post from "./Post/Post";
-import reactLogo from "../../assets/react.svg";
+import reactLogo from "../../assets/logo/react.svg";
 
 function Feeds() {
   return (

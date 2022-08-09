@@ -55,7 +55,6 @@ function Post({ displayName, username, verified, text, image, avatar, bg }) {
           </div>
         </motion.div>
 
-        {/* <img src={image} alt="" /> */}
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
