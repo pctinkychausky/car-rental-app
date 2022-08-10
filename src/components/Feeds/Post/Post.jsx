@@ -8,6 +8,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import IosShareIcon from "@mui/icons-material/IosShare";
 import Projects from "../../Projects/Projects";
 import { motion, useMotionValue, useTransform } from "framer-motion";
+import data from "../../data/projectImg.json";
 
 function Post({ displayName, username, verified, text, image, avatar, bg }) {
   const x = useMotionValue(0);
@@ -51,7 +52,9 @@ function Post({ displayName, username, verified, text, image, avatar, bg }) {
           whileTap={{ cursor: "grabbing" }}
         >
           <div className="cardsContainer" style={{ background: bg }}>
-            <Projects />
+            {data.map((entry) => (
+              <Projects src={entry.src} />
+            ))}
           </div>
         </motion.div>
 

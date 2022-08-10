@@ -1,31 +1,37 @@
 [
   {
     "id": 1,
+    "displayName": "Car Rental App",
     "title": "carhire",
     "src": "src/assets/img/carhire.jpg"
   },
   {
     "id": 2,
+    "displayName": "3D Earth Animation",
     "title": "3d",
     "src": "src/assets/img/3d.jpg"
   },
   {
     "id": 3,
+    "displayName": "Weather Forecast and Supermarket App",
     "title": "weather",
     "src": "src/assets/img/weather.jpg"
   },
   {
     "id": 4,
+    "displayName": "Guess your Animal Game",
     "title": "dom-game",
     "src": "src/assets/img/dom-game.jpg"
   },
   {
     "id": 5,
+    "displayName": "test",
     "title": "four-card",
     "src": "src/assets/img/four-card.jpg"
   },
   {
     "id": 6,
+    "displayName": "test",
     "title": "dashboard",
     "src": "src/assets/img/dashboard.jpg"
   }
