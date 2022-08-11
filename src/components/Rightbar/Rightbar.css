@@ -26,7 +26,7 @@
   padding: 20px;
   background-color: #f5f8fa;
   border-radius: 20px;
-  height: 572px;
+  height: auto;
   min-width: 288px;
   font-family: "chirp-heavy", sans-serif;
 }
