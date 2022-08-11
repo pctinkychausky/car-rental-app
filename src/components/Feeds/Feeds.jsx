@@ -20,6 +20,7 @@ function Feeds() {
           src={entry.src}
           color={entry.color}
           avatar={entry.avatar}
+          text={entry.text}
         />
       ))}
     </div>

@@ -9,6 +9,17 @@ import IosShareIcon from "@mui/icons-material/IosShare";
 import Projects from "../../Projects/Projects";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 
+const cardVariants = {
+  hover: {
+    sacle: 30,
+    textShadow: "0px 0px 8px rgb(255,255,255)",
+    boxShadow: "0px 0px 8px rgb(255,255,255)",
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
 function Post({ displayName, username, src, text, color, avatar, title }) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -37,6 +48,12 @@ function Post({ displayName, username, src, text, color, avatar, title }) {
         </div>
         <motion.div
           className="cardWrapper"
+          variants={cardVariants}
+          initial={{ y: -50 }}
+          animate={{ y: -10 }}
+          transition={{ delay: 0.1, type: "spring", stiffness: 120 }}
+          whileHover="hover"
+          whileSpring="spring"
           style={{
             x,
             y,

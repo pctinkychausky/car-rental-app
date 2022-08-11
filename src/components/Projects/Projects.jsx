@@ -26,6 +26,9 @@ function Projects({ src, title, style, drag, dragElastic, whileTap }) {
           <img className="projects" src={src} alt="" />
         </motion.div>
         <motion.div
+          initial={{ y: -250 }}
+          animate={{ y: -10 }}
+          transition={{ delay: 0.1, type: "spring", stiffness: 120 }}
           style={style}
           drag={drag}
           dragElastic={dragElastic}

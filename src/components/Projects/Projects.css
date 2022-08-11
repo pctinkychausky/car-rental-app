@@ -28,8 +28,7 @@
 .card h1 {
   text-align: center;
   color: aliceblue;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  text-shadow: 4px 0px 1 #000;
   z-index: 99;
   transition: all 0.75s ease-out;
 }
@@ -47,5 +46,7 @@
   color: white;
   cursor: pointer;
   border-radius: 30px;
-  font-weight: bolder;
+  font-weight: bold;
+  font-size: large;
+  text-shadow: 4px 0px 1 #000;
 }
