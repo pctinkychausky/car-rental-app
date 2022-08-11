@@ -4,8 +4,6 @@ import Tweet from "./TweetInput/Tweet";
 import Post from "./Post/Post";
 import data from "../data/projectImg.json";
 
-import reactLogo from "../../assets/logo/react.svg";
-
 function Feeds() {
   return (
     <div className="feed">
@@ -16,9 +14,12 @@ function Feeds() {
 
       {data.map((entry) => (
         <Post
+          title={entry.title}
           displayName={entry.displayName}
           username={entry.username}
           src={entry.src}
+          color={entry.color}
+          avatar={entry.avatar}
         />
       ))}
     </div>

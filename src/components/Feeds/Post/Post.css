@@ -58,23 +58,47 @@
   display: flex;
   align-items: center;
 }
-
 .post__avatar {
   padding: 20px;
+}
+
+.post__avatar > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post__avatar > div > img {
+  height: auto;
+  width: auto;
+}
+
+#root > div > div.feed > div:nth-child(4) > div.post__avatar > div > img {
+  height: 150%;
+  width: 150%;
+}
+
+#root > div > div.feed > div:nth-child(8) > div.post__avatar > div > img {
+  transform: scale(0.8);
+}
+
+#root > div > div.feed > div:nth-child(7) > div.post__avatar > div > img {
 }
 
 .cardsContainer {
   border-radius: 20px;
   width: 408px;
-  height: 500px;
+  height: 600px;
 }
 
 .cardWrapper {
   margin-block-start: 30px;
   margin-block-end: 60px;
   width: 408px;
-  height: 500px;
-  perspective: 2000;
+  height: 600px;
   border-radius: 20px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.inner__cardsContainer {
 }

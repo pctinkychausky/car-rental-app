@@ -8,18 +8,17 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import IosShareIcon from "@mui/icons-material/IosShare";
 import Projects from "../../Projects/Projects";
 import { motion, useMotionValue, useTransform } from "framer-motion";
-import data from "../../data/projectImg.json";
 
-function Post({ displayName, username, src, text, image, avatar, bg }) {
+function Post({ displayName, username, src, text, color, avatar, title }) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-  const rotateX = useTransform(y, [-50, 50], [60, -60]);
-  const rotateY = useTransform(x, [-50, 50], [-60, 60]);
+  const rotateX = useTransform(y, [-40, 40], [30, -30]);
+  const rotateY = useTransform(x, [-40, 40], [-30, 30]);
 
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src={avatar} />
+        <Avatar src={avatar} sx={{ width: 50, height: 50 }} />
       </div>
       <div className="post__body">
         <div className="post__header">
@@ -43,16 +42,26 @@ function Post({ displayName, username, src, text, image, avatar, bg }) {
             y,
             rotateX,
             rotateY,
-            z: 100,
+            z: 200,
           }}
           drag
           dragElastic={0.16}
           dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
           whileTap={{ cursor: "grabbing" }}
         >
-          <div className="cardsContainer" style={{ background: bg }}>
-            <div>
-              <Projects src={src} />
+          <div className="cardsContainer" style={{ background: color }}>
+            <div className="inner__cardsContainer">
+              <Projects
+                src={src}
+                title={title}
+                style={{
+                  x,
+                  y,
+                  rotateX,
+                  rotateY,
+                  z: 100000,
+                }}
+              />
             </div>
           </div>
         </motion.div>
