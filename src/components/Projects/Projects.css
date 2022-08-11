@@ -2,20 +2,23 @@
   background-image: url(../../assets/img/carhire.jpg);
   background-size: cover;
 } */
-.macbook {
+.macbookContainer {
   margin-top: 80px;
   display: flex;
-  justify-content: center;
+
   align-items: center;
   height: 300px;
+  flex-direction: column;
 }
 
-.macbook img {
+.macbook {
   height: auto;
-  width: 360px;
+  width: 400px;
 }
 
 .projects {
   height: auto;
-  width: 360px;
+  width: 260px;
+  margin-bottom: -50px;
+  position: absolute;
 }

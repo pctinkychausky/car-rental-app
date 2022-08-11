@@ -29,12 +29,19 @@
   font-size: 15px;
 }
 
+.post__headerText {
+  height: 20px;
+}
+
 .post__headerText > h3 {
   font-size: 15px;
   margin-bottom: 5px;
   font-family: "chirp-bold", sans-serif;
   display: flex;
   flex-direction: row;
+}
+.post__headerText > h3 > span {
+  flex-shrink: 0;
 }
 
 .post__badge {

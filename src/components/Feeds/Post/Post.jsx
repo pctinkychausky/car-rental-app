@@ -28,8 +28,7 @@ function Post({ displayName, username, verified, text, image, avatar, bg }) {
               <span>{displayName}</span>
 
               <span className="post__headerSpecial">
-                {verified && <VerifiedIcon className="post__badge" />} @
-                {username}
+                <VerifiedIcon className="post__badge" /> @{username}
               </span>
             </h3>
           </div>
@@ -52,9 +51,15 @@ function Post({ displayName, username, verified, text, image, avatar, bg }) {
           whileTap={{ cursor: "grabbing" }}
         >
           <div className="cardsContainer" style={{ background: bg }}>
-            {data.map((entry) => (
-              <Projects src={entry.src} />
-            ))}
+            {data.map((entry) => {
+              if (entry.displayName === displayName) {
+                return (
+                  <div>
+                    <Projects src={entry.src} />
+                  </div>
+                );
+              }
+            })}
           </div>
         </motion.div>
 

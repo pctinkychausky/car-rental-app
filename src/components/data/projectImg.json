@@ -1,37 +1,43 @@
 [
   {
     "id": 1,
-    "displayName": "Car Rental App",
+    "displayName": "React App",
+    "username": "React | Hook | Context Api | FunctionalComponents",
     "title": "carhire",
     "src": "src/assets/img/carhire.jpg"
   },
   {
     "id": 2,
-    "displayName": "3D Earth Animation",
+    "displayName": "3D Animation App",
+    "username": "Babylon JS",
     "title": "3d",
     "src": "src/assets/img/3d.jpg"
   },
   {
     "id": 3,
-    "displayName": "Weather Forecast and Supermarket App",
+    "displayName": "AJAX / API App",
+    "username": "Asynchronous Programming | Transport layers | AJAX",
     "title": "weather",
     "src": "src/assets/img/weather.jpg"
   },
   {
     "id": 4,
-    "displayName": "Guess your Animal Game",
+    "displayName": "DOM App",
+    "username": "DOM Manipulation",
     "title": "dom-game",
     "src": "src/assets/img/dom-game.jpg"
   },
   {
     "id": 5,
-    "displayName": "test",
+    "displayName": "Dashboard App",
+    "username": "Web API's | Material UI",
     "title": "four-card",
     "src": "src/assets/img/four-card.jpg"
   },
   {
     "id": 6,
-    "displayName": "test",
+    "displayName": "User Interface",
+    "username": "HTML5 | CSS3",
     "title": "dashboard",
     "src": "src/assets/img/dashboard.jpg"
   }

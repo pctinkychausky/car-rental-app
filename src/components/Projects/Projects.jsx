@@ -9,8 +9,8 @@ function Projects({ src }) {
   return (
     <div className="masterContainer">
       <div className="card">
-        <div className="macbook">
-          <img src={macbook} alt="" />
+        <div className="macbookContainer">
+          <img className="macbook" src={macbook} alt="" />
           <img className="projects" src={src} alt="" />
         </div>
       </div>
