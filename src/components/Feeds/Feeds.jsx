@@ -15,7 +15,11 @@ function Feeds() {
       <Tweet />
 
       {data.map((entry) => (
-        <Post displayName={entry.displayName} username={entry.username} />
+        <Post
+          displayName={entry.displayName}
+          username={entry.username}
+          src={entry.src}
+        />
       ))}
     </div>
   );
