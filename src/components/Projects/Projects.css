@@ -14,11 +14,13 @@
 .macbook {
   height: auto;
   width: 400px;
+  z-index: 2;
 }
 
 .projects {
-  height: auto;
-  width: 260px;
-  margin-bottom: -50px;
+  height: 190px;
+  width: 300px;
   position: absolute;
+  z-index: 1;
+  padding-top: 12px;
 }

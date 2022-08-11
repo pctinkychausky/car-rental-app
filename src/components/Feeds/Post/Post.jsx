@@ -10,7 +10,7 @@ import Projects from "../../Projects/Projects";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import data from "../../data/projectImg.json";
 
-function Post({ displayName, username, verified, text, image, avatar, bg }) {
+function Post({ displayName, username, src, text, image, avatar, bg }) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotateX = useTransform(y, [-50, 50], [60, -60]);
@@ -51,15 +51,9 @@ function Post({ displayName, username, verified, text, image, avatar, bg }) {
           whileTap={{ cursor: "grabbing" }}
         >
           <div className="cardsContainer" style={{ background: bg }}>
-            {data.map((entry) => {
-              if (entry.displayName === displayName) {
-                return (
-                  <div>
-                    <Projects src={entry.src} />
-                  </div>
-                );
-              }
-            })}
+            <div>
+              <Projects src={src} />
+            </div>
           </div>
         </motion.div>
 
