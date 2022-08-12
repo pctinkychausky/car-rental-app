@@ -27,7 +27,7 @@ function Rightbar() {
         <h4>Email</h4>
         <h5>pctinkychausky@gmail.com</h5>
         <h4>GitHub</h4>
-        <h5>htth5s://github.com/h5ctinkychausky/</h5>
+        <h5>htth5s://github.com/pctinkychausky/</h5>
         <h4>Moblie</h4>
         <h5>+44(0)7878925194</h5>
       </div>
