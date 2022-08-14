@@ -22,9 +22,12 @@ const cardVariants = {
 
 function Post({ displayName, username, src, text, color, avatar, title }) {
   const [xAxis, setXAxis] = useState(null);
-  console.log("🚀 ~ file: Post.jsx ~ line 25 ~ Post ~ xAxis", xAxis);
   const [yAxis, setYAxis] = useState(null);
-  console.log("🚀 ~ file: Post.jsx ~ line 27 ~ Post ~ yAxis", yAxis);
+
+  const mouseleave = (e) => {
+    setXAxis((window.innerWidth / 2 - e.pageX) / 25);
+    setYAxis((window.innerWidth / 2 - e.pageY) / 25);
+  };
 
   const mouseover = (e) => {
     setXAxis((window.innerWidth / 2 - e.pageX) / 25);
@@ -55,15 +58,6 @@ function Post({ displayName, username, src, text, color, avatar, title }) {
           <div className="post__headerDescription">
             <p>{text}</p>
           </div>
-          <div
-            onMouseMove={mouseover}
-            style={{
-              width: 100,
-              height: 100,
-              backgroundColor: "red",
-              transform: "rotateY(${xAxis}deg) rotateX(${yAxis}deg)",
-            }}
-          />
         </div>
         <motion.div
           className="cardWrapper"
@@ -81,7 +75,21 @@ function Post({ displayName, username, src, text, color, avatar, title }) {
             z: 200,
           }}
         >
-          <div className="cardsContainer" style={{ background: color }}>
+          <div
+            className="cardsContainer"
+            onMouseMove={() =>
+              (this.style.transform = `rotateY(${xAxis * 5}deg) rotateX(${
+                yAxis * 5
+              }deg)`)
+            }
+            // onMouseLeave={() =>
+            //   (this.style.transform = `rotateY(0deg) rotateX(0deg)
+            //   `)
+            // }
+            style={{
+              background: color,
+            }}
+          >
             <div className="inner__cardsContainer">
               <Projects
                 src={src}

@@ -89,15 +89,28 @@
 #root > div > div.feed > div:nth-child(7) > div.post__avatar > div > img {
 }
 
+.CardsMastercontainer {
+  width: 200%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
 .cardsContainer {
   border-radius: 20px;
   width: 408px;
   height: 580px;
+  transform-style: preserve-3d;
 }
 
 .cardWrapper {
   margin-block-start: 30px;
   margin-block-end: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 408px;
   height: 580px;
   border-radius: 20px;
