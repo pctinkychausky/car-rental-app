@@ -77,15 +77,14 @@ function Post({ displayName, username, src, text, color, avatar, title }) {
         >
           <div
             className="cardsContainer"
-            onMouseMove={() =>
-              (this.style.transform = `rotateY(${xAxis * 5}deg) rotateX(${
-                yAxis * 5
-              }deg)`)
-            }
-            // onMouseLeave={() =>
-            //   (this.style.transform = `rotateY(0deg) rotateX(0deg)
-            //   `)
-            // }
+            onMouseMove={($e) => {
+              $e.target.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+              mouseover($e);
+            }}
+            onMouseLeave={($e) => {
+              $e.target.style.transform = `rotateY(0deg) rotateX(0deg)
+              `;
+            }}
             style={{
               background: color,
             }}
