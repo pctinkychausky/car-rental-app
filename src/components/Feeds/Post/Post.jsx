@@ -7,22 +7,22 @@ import RepeatIcon from "@mui/icons-material/Repeat";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import IosShareIcon from "@mui/icons-material/IosShare";
 import Projects from "../../Projects/Projects";
-import { motion, useMotionValue, useTransform } from "framer-motion";
+// import { motion, useMotionValue, useTransform } from "framer-motion";
 
 const cardVariants = {
-  hover: {
-    sacle: 30,
-    textShadow: "0px 0px 8px rgb(255,255,255)",
-    boxShadow: "0px 0px 8px rgb(255,255,255)",
-    transition: {
-      duration: 1,
-    },
-  },
+  // hover: {
+  //   sacle: 30,
+  //   textShadow: "0px 0px 8px rgb(255,255,255)",
+  //   boxShadow: "0px 0px 8px rgb(255,255,255)",
+  //   transition: {
+  //     duration: 1,
+  //   },
+  // },
 };
 
 function Post({ displayName, username, src, text, color, avatar, title }) {
-  const [xAxis, setXAxis] = useState(null);
-  const [yAxis, setYAxis] = useState(null);
+  const [xAxis, setXAxis] = useState(0);
+  const [yAxis, setYAxis] = useState(0);
 
   const mouseleave = (e) => {
     setXAxis((window.innerWidth / 2 - e.pageX) / 25);
@@ -34,10 +34,10 @@ function Post({ displayName, username, src, text, color, avatar, title }) {
     setYAxis((window.innerWidth / 2 - e.pageY) / 25);
   };
 
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const rotateX = useTransform(y, [-40, 40], [30, -30]);
-  const rotateY = useTransform(x, [-40, 40], [-30, 30]);
+  // const x = useMotionValue(0);
+  // const y = useMotionValue(0);
+  // const rotateX = useTransform(y, [-40, 40], [30, -30]);
+  // const rotateY = useTransform(x, [-40, 40], [-30, 30]);
 
   return (
     <div className="post">
@@ -59,7 +59,7 @@ function Post({ displayName, username, src, text, color, avatar, title }) {
             <p>{text}</p>
           </div>
         </div>
-        <motion.div
+        {/* <motion.div
           className="cardWrapper"
           variants={cardVariants}
           initial={{ y: -50 }}
@@ -74,39 +74,39 @@ function Post({ displayName, username, src, text, color, avatar, title }) {
             rotateY,
             z: 200,
           }}
-        >
-          <div
-            className="cardsContainer"
-            onMouseMove={($e) => {
-              $e.target.style.transform = `rotateY(${xAxis * 5}deg) rotateX(${
-                yAxis * 5
-              }deg)`;
-              mouseover($e);
-            }}
-            onMouseLeave={($e) => {
-              $e.target.style.transform = `rotateY(0deg) rotateX(0deg)
+        > */}
+        <div
+          className="cardsContainer"
+          onMouseMove={($e) => {
+            $e.target.style.transform = `rotateY(${xAxis * 5}deg) rotateX(${
+              yAxis * 5
+            }deg)`;
+            mouseover($e);
+          }}
+          onMouseLeave={($e) => {
+            $e.target.style.transform = `rotateY(0deg) rotateX(0deg)
             `;
-              mouseleave($e);
-            }}
-            style={{
-              background: color,
-            }}
-          >
-            <div className="inner__cardsContainer">
-              <Projects
-                src={src}
-                title={title}
-                style={{
-                  x,
-                  y,
-                  rotateX,
-                  rotateY,
-                  z: 100000,
-                }}
-              />
-            </div>
+            mouseleave($e);
+          }}
+          style={{
+            background: color,
+          }}
+        >
+          <div className="inner__cardsContainer">
+            <Projects
+              src={src}
+              title={title}
+              // style={{
+              //   x,
+              //   y,
+              //   rotateX,
+              //   rotateY,
+              //   z: 100000,
+              // }}
+            />
           </div>
-        </motion.div>
+        </div>
+        {/* </motion.div> */}
 
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
