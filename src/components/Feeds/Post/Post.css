@@ -103,6 +103,8 @@
   width: 408px;
   height: 580px;
   transform-style: preserve-3d;
+  transition: box-shadow 0.5s;
+  will-change: transform;
 }
 
 .cardWrapper {

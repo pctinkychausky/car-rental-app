@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import Avatar from "@mui/material/Avatar";
 import "./Post.css";
@@ -8,6 +8,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import IosShareIcon from "@mui/icons-material/IosShare";
 import Projects from "../../Projects/Projects";
 // import { motion, useMotionValue, useTransform } from "framer-motion";
+import { useSpring, animated } from "react-spring";
 
 const cardVariants = {
   // hover: {
@@ -21,18 +22,37 @@ const cardVariants = {
 };
 
 function Post({ displayName, username, src, text, color, avatar, title }) {
-  const [xAxis, setXAxis] = useState(0);
-  const [yAxis, setYAxis] = useState(0);
+  // We add this ref to card element and use in onMouseMove event ...
+  // ... to get element's offset and dimensions.
+  const ref = useRef();
 
-  const mouseleave = (e) => {
-    setXAxis((window.innerWidth / 2 - e.pageX) / 25);
-    setYAxis((window.innerWidth / 2 - e.pageY) / 25);
-  };
+  // Keep track of whether card is hovered so we can increment ...
+  // ... zIndex to ensure it shows up above other cards when animation causes overlap.
+  const [isHovered, setHovered] = useState(false);
 
-  const mouseover = (e) => {
-    setXAxis((window.innerWidth / 2 - e.pageX) / 25);
-    setYAxis((window.innerWidth / 2 - e.pageY) / 25);
-  };
+  const [animatedProps, setAnimatedProps] = useSpring(() => {
+    return {
+      // Array containing [rotateX, rotateY, and scale] values.
+      // We store under a single key (xys) instead of separate keys ...
+      // ... so that we can use animatedProps.xys.interpolate() to ...
+      // ... easily generate the css transform value below.
+      xys: [0, 0, 1],
+      // Setup physics
+      config: { mass: 10, tension: 400, friction: 40, precision: 0.00001 },
+    };
+  });
+  // const [xAxis, setXAxis] = useState(0);
+  // const [yAxis, setYAxis] = useState(0);
+
+  // const mouseleave = (e) => {
+  //   setXAxis((window.innerWidth / 2 - e.pageX) / 25);
+  //   setYAxis((window.innerWidth / 2 - e.pageY) / 25);
+  // };
+
+  // const mouseover = (e) => {
+  //   setXAxis((window.innerWidth / 2 - e.pageX) / 25);
+  //   setYAxis((window.innerWidth / 2 - e.pageY) / 25);
+  // };
 
   // const x = useMotionValue(0);
   // const y = useMotionValue(0);
@@ -75,22 +95,67 @@ function Post({ displayName, username, src, text, color, avatar, title }) {
             z: 200,
           }}
         > */}
-        <div
+        <animated.div
           className="cardsContainer"
-          onMouseMove={($e) => {
-            $e.target.style.transform = `rotateY(${xAxis * 5}deg) rotateX(${
-              yAxis * 5
-            }deg)`;
-            mouseover($e);
+          ref={ref}
+          onMouseEnter={() => setHovered(true)}
+          onMouseMove={({ clientX, clientY }) => {
+            // Get mouse x position within card
+            const x =
+              clientX -
+              (ref.current.offsetLeft -
+                (window.scrollX ||
+                  window.pageXOffset ||
+                  document.body.scrollLeft));
+
+            // Get mouse y position within card
+            const y =
+              clientY -
+              (ref.current.offsetTop -
+                (window.scrollY ||
+                  window.pageYOffset ||
+                  document.body.scrollTop));
+
+            // Set animated values based on mouse position and card dimensions
+            const dampen = 100; // Lower the number the less rotation
+            const xys = [
+              -(y - ref.current.clientHeight / 2) / dampen, // rotateX
+              (x - ref.current.clientWidth / 2) / dampen, // rotateY
+              1.07, // Scale
+            ];
+
+            // Update values to animate to
+            setAnimatedProps({ xys: xys });
           }}
-          onMouseLeave={($e) => {
-            $e.target.style.transform = `rotateY(0deg) rotateX(0deg)
-            `;
-            mouseleave($e);
+          onMouseLeave={() => {
+            setHovered(false);
+            // Set xys back to original
+            setAnimatedProps({ xys: [0, 0, 1] });
           }}
           style={{
+            // If hovered we want it to overlap other cards when it scales up
+            zIndex: isHovered ? 2 : 1,
+            // Interpolate function to handle css changes
+            transform: animatedProps.xys.interpolate(
+              (x, y, s) =>
+                `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+            ),
             background: color,
           }}
+          // onMouseMove={($e) => {
+          //   $e.target.style.transform = `rotateY(${xAxis * 5}deg) rotateX(${
+          //     yAxis * 5
+          //   }deg)`;
+          //   mouseover($e);
+          // }}
+          // onMouseLeave={($e) => {
+          //   $e.target.style.transform = `rotateY(0deg) rotateX(0deg)
+          //   `;
+          //   mouseleave($e);
+          // }}
+          // style={{
+          //   background: color,
+          // }}
         >
           <div className="inner__cardsContainer">
             <Projects
@@ -105,7 +170,7 @@ function Post({ displayName, username, src, text, color, avatar, title }) {
               // }}
             />
           </div>
-        </div>
+        </animated.div>
         {/* </motion.div> */}
 
         <div className="post__footer">
