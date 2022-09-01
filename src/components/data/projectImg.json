@@ -4,10 +4,10 @@
     "displayName": "React App",
     "username": "React | Hook | Context Api | FunctionalComponents",
     "title": "CarHire.com",
-    "src": "../public/assets/img/react.jpg",
-    "logo": "../public/assets/img/react.jpg",
+    "src": "../../../public/assets/img/react.jpg",
+    "logo": "../../../public/assets/img/react.jpg",
     "color": "linear-gradient(rgb(255, 152, 77) 10%, rgb(143, 248, 162)) 100%",
-    "avatar": "../public/assets/logo/react.svg",
+    "avatar": "../../../public/assets/logo/react.svg",
     "text": "Help these dudes find their car! Add, remove, delete and even update (you know the drill) cars to the server with this React CRUD app using AJAX, context api, hooks and react hook forms library validation"
   },
   {
