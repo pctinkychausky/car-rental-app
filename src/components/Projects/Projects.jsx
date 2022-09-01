@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.css";
-import macbook from "../../assets/img/macbook.png";
+import macbook from "../../../public/assets/img/macbook.png";
 import { motion } from "framer-motion";
 
 function Projects({ src, title, style, drag, dragElastic, whileTap }) {
