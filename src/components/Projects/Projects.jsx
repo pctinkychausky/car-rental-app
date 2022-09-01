@@ -4,6 +4,7 @@ import macbook from "../../../public/assets/img/macbook.png";
 import { motion } from "framer-motion";
 
 function Projects({ src, title, style, drag, dragElastic, whileTap }) {
+  // const image = window.location.origin + { src };
   return (
     <div className="masterContainer">
       <div className="card">
