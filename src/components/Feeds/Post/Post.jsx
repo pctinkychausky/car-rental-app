@@ -21,7 +21,7 @@ const cardVariants = {
   // },
 };
 
-function Post({ displayName, username, src, text, color, avatar, title }) {
+function Post({ url, displayName, username, src, text, color, avatar, title }) {
   // We add this ref to card element and use in onMouseMove event ...
   // ... to get element's offset and dimensions.
   const ref = useRef();
@@ -161,6 +161,7 @@ function Post({ displayName, username, src, text, color, avatar, title }) {
             <Projects
               src={src}
               title={title}
+              url={url}
               // style={{
               //   x,
               //   y,

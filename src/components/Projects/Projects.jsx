@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
 import macbook from "../../../public/assets/img/macbook.png";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
-function Projects({ src, title, style, drag, dragElastic, whileTap }) {
+function Projects({ url, src, title, style, drag, dragElastic, whileTap }) {
+  console.log("🚀 ~ file: Projects.jsx ~ line 7 ~ Projects ~ url", url);
   // const image = window.location.origin + { src };
+
+  const RedirectPage = () => {
+    window.location.href = `${url}`;
+  };
+
   return (
     <div className="masterContainer">
       <div className="card">
@@ -36,7 +43,7 @@ function Projects({ src, title, style, drag, dragElastic, whileTap }) {
           whileTap={{ whileTap }}
           class="click"
         >
-          <button>Click Me</button>
+          <button onClick={RedirectPage}>Click Me</button>
         </motion.div>
       </div>
     </div>

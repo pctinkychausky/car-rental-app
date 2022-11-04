@@ -2,51 +2,58 @@
   {
     "id": 1,
     "displayName": "React App",
+    "url": "https://fluffy-daifuku-9c8bad.netlify.app",
     "username": "React | Hook | Context Api | FunctionalComponents",
     "title": "CarHire.com",
     "src": "/assets/img/react.jpg",
     "logo": "/assets/img/react.jpg",
-    "color": "linear-gradient(rgb(255, 152, 77) 10%, rgb(143, 248, 162)) 100%",
+    "color": "linear-gradient(135deg,rgb(200, 100, 100) 10%, rgb(255, 255, 255)) 0%",
+    "backdrop-filter": "blur(10px)",
     "avatar": "/assets/logo/react.svg",
     "text": "Help these dudes find their car! Add, remove, delete and even update (you know the drill) cars to the server with this React CRUD app using AJAX, context api, hooks and react hook forms library validation"
   },
   {
     "id": 2,
     "displayName": "3D Animation App",
+    "url": "https://verdant-platypus-3a9234.netlify.app",
     "username": "Babylon JS",
     "title": "3D Earth",
     "src": "/assets/img/3d.jpg",
-    "color": "linear-gradient(rgb(143, 248, 162) 10%, rgb(73, 190, 237)) 100%",
+    "color": "linear-gradient(135deg,rgb(20, 100, 100) 10%, rgb(255, 255, 255)) 0%",
     "avatar": "/assets/logo/babylonjs.png",
     "text": "Use the GUI to generate different types of galaxies, change the colours, make them swirly... Endless options and all of them pretty"
   },
   {
     "id": 3,
     "displayName": "AJAX / API App",
+    "url": "https://symphonious-piroshki-e52943.netlify.app",
     "username": "Asynchronous Programming | Transport layers",
     "title": "Your Groceries Advisor",
     "src": "/assets/img/weather.png",
-    "color": "linear-gradient(rgb(73, 190, 237) 10%, rgb(159, 119, 255)) 100%",
+    "color": "linear-gradient(135deg,rgb(200, 119, 255) 10%, rgb(255, 255, 255)) 0%",
+
     "avatar": "/assets/logo/node.svg",
     "text": "A weather forecast app that returns weather forecast based on both user geo-location and user-inputted location. Features regex validation on user input."
   },
   {
     "id": 4,
     "displayName": "DOM App",
+    "url": "https://superlative-dusk-d07c37.netlify.app",
     "username": "DOM Manipulation",
     "title": "Guess Your Animals Game",
     "src": "/assets/img/dom-game.jpg",
-    "color": "linear-gradient(rgb(159, 119, 255) 10%, rgb(240, 86, 123)) 100%",
+    "color": "linear-gradient(135deg, rgb(85, 102, 84) 50%, rgb(255, 255, 255)) 0%",
     "avatar": "/assets/logo/typescript.svg",
     "text": "This app was made in a team of four as part of a hackathon challenge. The goal was to produce an app in 6 hours to help children learning to read. Through using a text-to-speech API, users are encouraged to practice pronunciation."
   },
   {
     "id": 5,
     "displayName": "Dashboard App",
+    "url": "https://magical-lolly-f07100.netlify.app",
     "username": "Web API's | Material UI",
     "title": "News Today",
     "src": "/assets/img/dashboard.jpg",
-    "color": "linear-gradient(rgb(159, 119, 255) 10%, rgb(240, 86, 123)) 100%",
+    "color": "linear-gradient(135deg, rgb(163, 181, 199) 50%, rgb(255, 255, 255)) 0%",
     "avatar": "/assets/logo/javascript.svg",
     "text": "Help these dudes find their car! Add, remove, delete and even update (you know the drill) cars to the server with this React CRUD app using AJAX, context api, hooks and react hook forms library validation"
   },
@@ -54,10 +61,11 @@
   {
     "id": 6,
     "displayName": "User Interface",
+    "url": "https://fastidious-manatee-fa8b18.netlify.app",
     "username": "HTML5 | CSS3",
     "title": "Homeage Piece",
     "src": "/assets/img/four-card.jpg",
-    "color": "linear-gradient(rgb(240, 86, 123) 10%, rgb(255, 152, 77",
+    "color": "linear-gradient(135deg,rgb(240, 86, 123) 10%, rgb(255, 255, 255)) 0%",
     "avatar": "/assets/logo/redux.svg",
     "text": "Creating a website from a Figma design using flexbox to create a responsive layout, simple but essential stuff"
   }

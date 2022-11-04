@@ -21,6 +21,7 @@ function Feeds() {
           color={entry.color}
           avatar={entry.avatar}
           text={entry.text}
+          url={entry.url}
         />
       ))}
     </div>
