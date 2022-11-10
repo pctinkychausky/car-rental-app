@@ -60,9 +60,20 @@
 
   {
     "id": 6,
-    "displayName": "User Interface",
-    "url": "https://fastidious-manatee-fa8b18.netlify.app",
-    "username": "HTML5 | CSS3",
+    "displayName": "CSS Homepage",
+    "url": "https://app.netlify.com/sites/coruscating-cocada-9d8b97/overview",
+    "username": "HTML5 | CSS3 | Flex | Media Queries",
+    "title": "Homeage Piece",
+    "src": "/assets/img/four-card.jpg",
+    "color": "linear-gradient(135deg,rgb(240, 86, 123) 10%, rgb(255, 255, 255)) 0%",
+    "avatar": "/assets/logo/redux.svg",
+    "text": "Creating a website from a Figma design using flexbox to create a responsive layout, simple but essential stuff"
+  },
+  {
+    "id": 7,
+    "displayName": "Figma clone",
+    "url": "https://fastidious-manatee-fa8b18.netlify.app/",
+    "username": "HTML5 | CSS3 ",
     "title": "Homeage Piece",
     "src": "/assets/img/four-card.jpg",
     "color": "linear-gradient(135deg,rgb(240, 86, 123) 10%, rgb(255, 255, 255)) 0%",
