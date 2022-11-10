@@ -30,10 +30,14 @@ function Rightbar() {
           GitHub (<a href="https://github.com/pctinkychausky/">click me</a>)
         </h4>
         <h5>https://github.com/pctinkychausky/</h5>
-        <h4>CV</h4>
-        <a href="https://drive.google.com/file/d/1SLhO_-aGJGBrsPiAS5cqwhBNi_gWqbXY/view?usp=sharing">
-          PDF verison
-        </a>
+        <h4>
+          CV ({" "}
+          <a href="https://drive.google.com/file/d/1SLhO_-aGJGBrsPiAS5cqwhBNi_gWqbXY/view?usp=sharing">
+            PDF verison
+          </a>
+          )
+        </h4>
+
         <h4>
           Linkedin (
           <a href="https://www.linkedin.com/in/jason-chau-95b6588a">click me</a>
