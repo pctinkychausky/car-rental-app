@@ -64,7 +64,7 @@
     "url": "https://app.netlify.com/sites/coruscating-cocada-9d8b97/overview",
     "username": "HTML5 | CSS3 | Flex | Media Queries",
     "title": "Homeage Piece",
-    "src": "/assets/img/four-card.jpg",
+    "src": "/assets/img/nowness.jpg",
     "color": "linear-gradient(135deg,rgb(240, 86, 123) 10%, rgb(255, 255, 255)) 0%",
     "avatar": "/assets/logo/redux.svg",
     "text": "Creating a website from a Figma design using flexbox to create a responsive layout, simple but essential stuff"
