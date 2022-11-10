@@ -1,16 +1,16 @@
 [
   {
     "id": 1,
-    "displayName": "React App",
+    "displayName": "MERN App",
     "url": "https://fluffy-daifuku-9c8bad.netlify.app",
-    "username": "React | Hook | Context Api | FunctionalComponents",
+    "username": "React | Hooks | Express | Node | MongoDB",
     "title": "CarHire.com",
     "src": "/assets/img/react.jpg",
     "logo": "/assets/img/react.jpg",
     "color": "linear-gradient(135deg,rgb(200, 100, 100) 10%, rgb(255, 255, 255)) 0%",
     "backdrop-filter": "blur(10px)",
     "avatar": "/assets/logo/react.svg",
-    "text": "Help these dudes find their car! Add, remove, delete and even update (you know the drill) cars to the server with this React CRUD app using AJAX, context api, hooks and react hook forms library validation"
+    "text": "A MERN App with React JS to implement the presentation layer, Express and Node to make up the middle layer (Server), and MongoDB to create the database layer to develop a car rental application. The frontend layer is created by functional component React JS framework with Material UI library. \n The app allows users to login with Google sign-in and have specific permissions and roles through Auth0 authentication and authorization. And the RESTful API endpoints allow users to checkout and make/edit orders. "
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "src": "/assets/img/3d.jpg",
     "color": "linear-gradient(135deg,rgb(20, 100, 100) 10%, rgb(255, 255, 255)) 0%",
     "avatar": "/assets/logo/babylonjs.png",
-    "text": "Use the GUI to generate different types of galaxies, change the colours, make them swirly... Endless options and all of them pretty"
+    "text": "Use the Babylon.js GUI library to generate different types of galaxies, change the colours, make them swirly... Endless options and all of them pretty"
   },
   {
     "id": 3,
@@ -33,18 +33,18 @@
     "color": "linear-gradient(135deg,rgb(200, 119, 255) 10%, rgb(255, 255, 255)) 0%",
 
     "avatar": "/assets/logo/node.svg",
-    "text": "A weather forecast app that returns weather forecast based on both user geo-location and user-inputted location. Features regex validation on user input."
+    "text": "Ajax app created by React. Calling weather API to access user's geo-location to provide weather forecast and advise the users to prepare extra groceries if bad weather is coming."
   },
   {
     "id": 4,
     "displayName": "DOM App",
     "url": "https://superlative-dusk-d07c37.netlify.app",
-    "username": "DOM Manipulation",
+    "username": "DOM Manipulation | common JS",
     "title": "Guess Your Animals Game",
     "src": "/assets/img/dom-game.jpg",
     "color": "linear-gradient(135deg, rgb(85, 102, 84) 50%, rgb(255, 255, 255)) 0%",
     "avatar": "/assets/logo/typescript.svg",
-    "text": "This app was made in a team of four as part of a hackathon challenge. The goal was to produce an app in 6 hours to help children learning to read. Through using a text-to-speech API, users are encouraged to practice pronunciation."
+    "text": "This is a children game named Guess your Animals. It is a work of DOM manipulation and common JS. User have to spell the name of the animals correctly to win the game. It will also remind the players how many guesses are remaining before lose."
   },
   {
     "id": 5,
@@ -55,7 +55,7 @@
     "src": "/assets/img/dashboard.jpg",
     "color": "linear-gradient(135deg, rgb(163, 181, 199) 50%, rgb(255, 255, 255)) 0%",
     "avatar": "/assets/logo/javascript.svg",
-    "text": "Help these dudes find their car! Add, remove, delete and even update (you know the drill) cars to the server with this React CRUD app using AJAX, context api, hooks and react hook forms library validation"
+    "text": "A Dashbord app showing the recent news and weather information demonstrated the use of Material UI and Ajax API call."
   },
 
   {
@@ -66,8 +66,8 @@
     "title": "Homeage Piece",
     "src": "/assets/img/nowness.png",
     "color": "linear-gradient(135deg,rgb(240, 86, 123) 10%, rgb(255, 255, 255)) 0%",
-    "avatar": "/assets/logo/redux.svg",
-    "text": "Cloning a website using flexbox to create a responsive layout"
+    "avatar": "/assets/logo/javascript.svg",
+    "text": "NOWNESS website clone. Showcase of website cloning with skills of CSS3 (Flexbox), HTML5 and responsive layout without Figma design."
   },
   {
     "id": 7,
@@ -78,6 +78,6 @@
     "src": "/assets/img/four-card.jpg",
     "color": "linear-gradient(135deg,rgb(140, 46, 123) 10%, rgb(255, 255, 255)) 0%",
     "avatar": "/assets/logo/redux.svg",
-    "text": "Creating a website from a Figma design using flexbox to create a responsive layout, simple but essential stuff"
+    "text": "Four cards website clone with use of Figma design and responsive layout. CSS3 skills eg. Flex is demonstrated in this app."
   }
 ]
