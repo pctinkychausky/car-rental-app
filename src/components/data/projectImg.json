@@ -67,7 +67,7 @@
     "src": "/assets/img/nowness.png",
     "color": "linear-gradient(135deg,rgb(240, 86, 123) 10%, rgb(255, 255, 255)) 0%",
     "avatar": "/assets/logo/redux.svg",
-    "text": "Creating a website from a Figma design using flexbox to create a responsive layout, simple but essential stuff"
+    "text": "Cloning a website using flexbox to create a responsive layout"
   },
   {
     "id": 7,
