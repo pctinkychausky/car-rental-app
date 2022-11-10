@@ -26,8 +26,20 @@ function Rightbar() {
         <h2 className="contact">Contact</h2>
         <h4>Email</h4>
         <h5>pctinkychausky@gmail.com</h5>
-        <h4>GitHub</h4>
-        <h5>htth5s://github.com/pctinkychausky/</h5>
+        <h4>
+          GitHub (<a href="https://github.com/pctinkychausky/">click me</a>)
+        </h4>
+        <h5>https://github.com/pctinkychausky/</h5>
+        <h4>CV</h4>
+        <a href="https://drive.google.com/file/d/1SLhO_-aGJGBrsPiAS5cqwhBNi_gWqbXY/view?usp=sharing">
+          PDF verison
+        </a>
+        <h4>
+          Linkedin (
+          <a href="https://www.linkedin.com/in/jason-chau-95b6588a">click me</a>
+          )
+        </h4>
+        <h5> https://www.linkedin.com/in/jason-chau-95b6588a</h5>
         <h4>Moblie</h4>
         <h5>+44(0)7878925194</h5>
       </div>
