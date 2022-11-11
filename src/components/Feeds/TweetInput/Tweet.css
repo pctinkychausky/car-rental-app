@@ -162,3 +162,11 @@
     margin-left: auto !important;
   }
 }
+@media (min-width: 1440px) {
+  .tweet {
+    width: 100%;
+  }
+  .tweet__footer {
+    width: 100%;
+  }
+}

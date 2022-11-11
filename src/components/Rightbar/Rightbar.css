@@ -75,11 +75,7 @@
 
 @media (min-width: 1440px) {
   .post {
-    display: flex;
-    align-items: flex-start;
-    border-bottom: 1px solid var(--twitter-background);
-    padding-bottom: 10px;
-    padding-inline-end: 70px;
+    flex: 0.3;
   }
 
   .post__body {

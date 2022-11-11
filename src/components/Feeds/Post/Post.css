@@ -179,24 +179,19 @@
 }
 
 @media (min-width: 1440px) {
-  .cardsContainer {
-    min-width: 320px;
-    height: 500px;
+  .post {
+    display: flex;
+    flex: 0.4;
   }
-
-  .post__avatar {
-    padding: 20px;
+  .post__headerText > h3 {
+    font-size: 20px !important;
   }
 
   .post__headerSpecial {
-    font-size: 20px;
-  }
-
-  .post__headerText > h3 {
-    font-size: 20px;
+    font-size: 18px !important;
   }
 
   .post__headerDescription > p {
-    font-size: 19px;
+    line-height: 1.1;
   }
 }

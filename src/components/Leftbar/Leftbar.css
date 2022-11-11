@@ -59,3 +59,9 @@
     font-size: 1vw;
   }
 }
+
+@media (min-width: 1440px) {
+  .leftbar {
+    flex: 0.3;
+  }
+}
