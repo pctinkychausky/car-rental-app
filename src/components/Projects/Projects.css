@@ -54,4 +54,8 @@
   .macbookContainer {
     height: 250px;
   }
+
+  .card h1 {
+    font-size: 2rem;
+  }
 }
