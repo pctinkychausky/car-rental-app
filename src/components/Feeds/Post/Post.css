@@ -143,14 +143,12 @@
 
 @media (min-width: 768px) {
   .post {
-    flex: 0.5;
   }
 }
 
 @media (min-width: 1024px) {
   .post {
     display: flex;
-    flex: 0.5;
   }
   .macbookContainer > img.macbook {
     height: 200px;
@@ -188,7 +186,6 @@
 @media (min-width: 1440px) {
   .post {
     display: flex;
-    flex: 0.4;
   }
   .post__headerText > h3 {
     font-size: 20px !important;
