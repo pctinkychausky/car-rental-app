@@ -49,11 +49,11 @@
     flex: 0.3;
   }
   .rightbar__input {
-    max-width: 50%;
+    max-width: 70%;
   }
 
   .rightbar__Container {
-    max-width: 50%;
+    max-width: 70%;
     height: 80%;
     line-height: 1.4vh;
   }
