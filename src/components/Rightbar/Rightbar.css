@@ -40,7 +40,7 @@
     padding-top: 30px;
     display: flex;
     flex-direction: column;
-    flex: 0.3;
+    flex: 0.25;
   }
   .rightbar__input {
     max-width: 50%;
@@ -75,7 +75,7 @@
 
 @media (min-width: 1440px) {
   .post {
-    flex: 0.25;
+    flex: 0.3;
   }
 
   .post__body {

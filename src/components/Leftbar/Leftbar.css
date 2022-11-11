@@ -38,6 +38,7 @@
 .leftbar > :nth-child(2) {
   font-family: "chirp-bold", sans-serif;
 }
+
 @media (min-width: 1024px) {
   .leftbar {
     margin-top: 40px;
