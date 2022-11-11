@@ -38,7 +38,7 @@
 
 @media (min-width: 768px) {
   .rightbar {
-    flex: 0.25;
+    flex: 0.3;
   }
 }
 @media (min-width: 1024px) {
@@ -46,7 +46,7 @@
     padding-top: 30px;
     display: flex;
     flex-direction: column;
-    flex: 0.25;
+    flex: 0.3;
   }
   .rightbar__input {
     max-width: 50%;
