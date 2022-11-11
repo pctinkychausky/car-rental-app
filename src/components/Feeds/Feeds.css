@@ -24,18 +24,18 @@
 
 @media (min-width: 768px) {
   .leftbar {
-    flex: 0.5;
+    flex: 0.4;
   }
 }
 
 @media (min-width: 1024px) {
   .feed {
-    flex: 0.5;
+    flex: 0.4;
   }
 }
 
 @media (min-width: 1440px) {
-  .leftbar {
+  .feed {
     flex: 0.4;
   }
 }

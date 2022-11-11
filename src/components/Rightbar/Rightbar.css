@@ -80,7 +80,7 @@
 }
 
 @media (min-width: 1440px) {
-  .post {
+  .rightbar {
     flex: 0.3;
   }
 
