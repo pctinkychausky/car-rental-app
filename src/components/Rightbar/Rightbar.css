@@ -75,7 +75,7 @@
 
 @media (min-width: 1440px) {
   .post {
-    flex: 0.3;
+    flex: 0.25;
   }
 
   .post__body {
