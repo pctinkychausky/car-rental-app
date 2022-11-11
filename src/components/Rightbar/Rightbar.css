@@ -162,9 +162,6 @@
     transform: scale(0.8);
   }
 
-  #root > div > div.feed > div:nth-child(7) > div.post__avatar > div > img {
-  }
-
   .CardsMastercontainer {
     width: 200%;
     position: absolute;
