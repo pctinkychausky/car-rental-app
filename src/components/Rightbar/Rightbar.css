@@ -72,3 +72,135 @@
     font-size: 0.8vw;
   }
 }
+
+@media (min-width: 1440px) {
+  .post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+    padding-inline-end: 70px;
+  }
+
+  .post__body {
+    flex: 1;
+    padding: 10px;
+    max-width: fit-content;
+  }
+
+  .post__body > img {
+    border-radius: 20px;
+    width: 408px;
+    height: auto;
+  }
+
+  .post__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .post__headerDescription {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: "chirp-regular", sans-serif;
+    font-weight: 400;
+    color: rgb(15, 20, 25);
+  }
+
+  .post__headerText {
+    height: 20px;
+    font-size: 15px;
+  }
+
+  .post__headerText > h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-family: "chirp-bold", sans-serif;
+    display: flex;
+    flex-direction: row;
+  }
+  .post__headerText > h3 > span {
+    flex-shrink: 0;
+  }
+
+  .post__badge {
+    font-size: 19px !important;
+    color: var(--twitter-color);
+    margin-inline: 3px;
+  }
+
+  .post__headerSpecial {
+    font-weight: 600;
+    font-size: 15px;
+    color: gray;
+    font-family: "chirp-regular", sans-serif;
+    display: flex;
+    align-items: center;
+  }
+  .post__avatar {
+    padding: 20px;
+  }
+
+  .post__avatar > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .post__avatar > div > img {
+    height: auto;
+    width: auto;
+  }
+
+  #root > div > div.feed > div:nth-child(4) > div.post__avatar > div > img {
+    height: 150%;
+    width: 150%;
+  }
+
+  #root > div > div.feed > div:nth-child(8) > div.post__avatar > div > img {
+    transform: scale(0.8);
+  }
+
+  #root > div > div.feed > div:nth-child(7) > div.post__avatar > div > img {
+  }
+
+  .CardsMastercontainer {
+    width: 200%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .cardsContainer {
+    border-radius: 20px;
+    width: 408px;
+    height: 580px;
+    transform-style: preserve-3d;
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    border: 1px solid rbga(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    overflow: hidden;
+  }
+
+  .cardWrapper {
+    margin-block-start: 30px;
+    margin-block-end: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 408px;
+    height: 580px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 30px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .inner__cardsContainer {
+    font-size: 90%;
+  }
+}
