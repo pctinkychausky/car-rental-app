@@ -50,3 +50,8 @@
   font-size: large;
   text-shadow: 4px 0px 1 #000;
 }
+@media (min-width: 1024px) {
+  .macbookContainer {
+    height: 250px;
+  }
+}

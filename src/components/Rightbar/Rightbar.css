@@ -1,5 +1,5 @@
 .rightbar {
-  flex: 0.3;
+  flex: 0.28;
 }
 .rightbar__input {
   display: flex;
@@ -27,11 +27,48 @@
   background-color: #f5f8fa;
   border-radius: 20px;
   height: auto;
-  min-width: 288px;
+  /* min-width: 288px; */
   font-family: "chirp-heavy", sans-serif;
 }
 
 .rightbar__Container > h2 {
   font-size: 18px;
   font-weight: 800;
+}
+@media (min-width: 1024px) {
+  .rightbar {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 0.35;
+  }
+  .rightbar__input {
+    max-width: 50%;
+  }
+
+  .rightbar__Container {
+    max-width: 50%;
+    height: 80%;
+    line-height: 1.4vh;
+  }
+
+  #root > div > div.rightbar > div.rightbar__input > input[type="text"] {
+    max-width: 50%;
+  }
+
+  #root > div > div.rightbar > div.rightbar__Container > h2 {
+    font-size: 1vw;
+  }
+
+  #root > div > div.rightbar > div.rightbar__Container > h3 {
+    font-size: 0.8vw;
+    line-height: 2.5vh;
+  }
+  #root > div > div.rightbar > div.rightbar__Container > h5 {
+    font-size: 0.8vw;
+    line-height: 2vh;
+  }
+  #root > div > div.rightbar > div.rightbar__Container > h4 {
+    font-size: 0.8vw;
+  }
 }

@@ -15,38 +15,45 @@ import "./Leftbar.css";
 function Leftbar() {
   return (
     <div className="leftbar">
-      <TwitterIcon className="leftbar__twitterIcon" />
-      <BarBtn Icon={HomeIcon} text="Home" className="leftbar__btn" />
-      <BarBtn Icon={TagIcon} text="Explore" className="leftbar__btn" />
-      <BarBtn
-        Icon={NotificationsNoneIcon}
-        text="Notifications"
-        className="leftbar__btn"
-      />
-      <BarBtn Icon={MailOutlineIcon} text="Messages" className="leftbar__btn" />
-      <BarBtn
-        Icon={BookmarkBorderIcon}
-        text="Bookmarks"
-        className="leftbar__btn"
-      />
-      <BarBtn
-        Icon={LibraryBooksOutlinedIcon}
-        text="Lists"
-        className="leftbar__btn"
-      />
-      <BarBtn
-        Icon={PermIdentityOutlinedIcon}
-        text="Profile"
-        className="leftbar__btn"
-      />
-      <BarBtn
-        Icon={SettingsInputSvideoOutlinedIcon}
-        text="More"
-        className="leftbar__btn"
-      />
-      <Button variant="outlined" className="leftbar__tweet" fullWidth>
-        Tweet
-      </Button>
+      <div className="table">
+        {" "}
+        <TwitterIcon className="leftbar__twitterIcon" />
+        <BarBtn Icon={HomeIcon} text="Home" className="leftbar__btn" />
+        <BarBtn Icon={TagIcon} text="Explore" className="leftbar__btn" />
+        <BarBtn
+          Icon={NotificationsNoneIcon}
+          text="Notifications"
+          className="leftbar__btn"
+        />
+        <BarBtn
+          Icon={MailOutlineIcon}
+          text="Messages"
+          className="leftbar__btn"
+        />
+        <BarBtn
+          Icon={BookmarkBorderIcon}
+          text="Bookmarks"
+          className="leftbar__btn"
+        />
+        <BarBtn
+          Icon={LibraryBooksOutlinedIcon}
+          text="Lists"
+          className="leftbar__btn"
+        />
+        <BarBtn
+          Icon={PermIdentityOutlinedIcon}
+          text="Profile"
+          className="leftbar__btn"
+        />
+        <BarBtn
+          Icon={SettingsInputSvideoOutlinedIcon}
+          text="More"
+          className="leftbar__btn"
+        />
+        <Button variant="outlined" className="leftbar__tweet" fullWidth>
+          Tweet
+        </Button>
+      </div>
     </div>
   );
 }

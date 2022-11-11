@@ -3,13 +3,24 @@
   align-items: flex-start;
   border-bottom: 1px solid var(--twitter-background);
   padding-bottom: 10px;
-  padding-inline-end: 70px;
 }
 
 .post__body {
-  flex: 1;
-  padding: 10px;
-  max-width: fit-content;
+  padding-top: 10px;
+  padding-right: 10px;
+  min-width: 65%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.post__headerSpecial {
+  max-width: 90%;
+}
+
+.cardsContainer {
+  align-self: center;
+  margin-block: 20px;
 }
 
 .post__body > img {
@@ -45,7 +56,6 @@
   flex-direction: row;
 }
 .post__headerText > h3 > span {
-  flex-shrink: 0;
 }
 
 .post__badge {
@@ -62,6 +72,7 @@
   display: flex;
   align-items: center;
 }
+
 .post__avatar {
   padding: 20px;
 }
@@ -100,7 +111,7 @@
 
 .cardsContainer {
   border-radius: 20px;
-  width: 408px;
+  width: 80%;
   height: 580px;
   transform-style: preserve-3d;
   transition: box-shadow 0.5s;
@@ -125,4 +136,45 @@
 
 .inner__cardsContainer {
   font-size: 90%;
+}
+
+.post__headerDescription > p {
+  padding-top: 30px;
+}
+
+@media (min-width: 1024px) {
+  .post {
+    display: flex;
+  }
+  .macbookContainer > img.macbook {
+    height: 200px;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .macbookContainer > img.projects {
+    height: 150px;
+    width: 210px;
+  }
+
+  .cardsContainer {
+    min-width: 320px;
+    height: 500px;
+  }
+
+  .post__avatar {
+    padding: 12px;
+  }
+
+  .post__headerSpecial {
+    font-size: 1vw;
+  }
+
+  .post__headerText > h3 {
+    font-size: 1vw;
+  }
+
+  .post__headerDescription > p {
+    font-size: 1.2vw;
+  }
 }

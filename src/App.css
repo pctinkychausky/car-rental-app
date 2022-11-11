@@ -11,10 +11,10 @@
   src: url("../src/assets/font/chirp-regular-web.ttf") format("truetype");
 }
 
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
-}
+} */
 
 body {
   font-family: "chirp-regular", sans-serif;
@@ -63,7 +63,7 @@ body {
 .App {
   display: flex;
   height: 100vh;
-  max-width: 1300px;
+  max-width: auto;
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
