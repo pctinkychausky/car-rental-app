@@ -39,6 +39,12 @@
   font-family: "chirp-bold", sans-serif;
 }
 
+@media (min-width: 768px) {
+  .leftbar {
+    flex: 0.25;
+  }
+}
+
 @media (min-width: 1024px) {
   .leftbar {
     margin-top: 40px;

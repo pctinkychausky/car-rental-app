@@ -140,6 +140,12 @@
   padding-top: 30px;
 }
 
+@media (min-width: 768px) {
+  .post {
+    flex: 0.5;
+  }
+}
+
 @media (min-width: 1024px) {
   .post {
     display: flex;
