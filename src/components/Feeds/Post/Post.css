@@ -145,7 +145,7 @@
 @media (min-width: 1024px) {
   .post {
     display: flex;
-    flex: 0.45;
+    flex: 0.55;
   }
   .macbookContainer > img.macbook {
     height: 200px;
