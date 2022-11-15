@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "displayName": "MERN App",
-    "url": "https://fluffy-daifuku-9c8bad.netlify.app",
+    "displayName": "fullstack MERN App",
+    "url": "https://fullstack-mern-car-rental.herokuapp.com/",
     "username": "React | Hooks | Express | Node | MongoDB",
     "title": "CarHire.com",
     "src": "/assets/img/react.jpg",
