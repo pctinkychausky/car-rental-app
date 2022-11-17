@@ -26,25 +26,26 @@
 
   {
     "id": 3,
-    "displayName": "3D Animation App",
-    "url": "https://verdant-platypus-3a9234.netlify.app",
-    "username": "Babylon JS",
-    "title": "3D Earth",
-    "src": "/assets/img/3d.jpg",
-    "color": "linear-gradient(135deg,rgb(20, 100, 100) 10%, rgb(255, 255, 255)) 0%",
-    "avatar": "/assets/logo/babylonjs.png",
-    "text": "Use the Babylon.js GUI library to generate different types of galaxies, change the colours, make them swirly... Endless options and all of them pretty"
-  },
-  {
-    "id": 4,
     "displayName": "First Server App",
     "url": "https://github.com/pctinkychausky/first-server-mongodb-restful-demo",
     "username": "Node | Express | MongoDB | Mongoose | RESTful API",
     "title": "First Server with a REST API tied to DB",
     "src": "/assets/img/first-server-mongodb-demo.png",
-    "color": "linear-gradient(135deg,rgb(250, 169, 255) 10%, rgb(255, 255, 255)) 0%",
+    "color": "linear-gradient(135deg,rgb(130, 158, 221) 10%, rgb(255, 255, 255)) 0%",
     "avatar": "/assets/logo/node.svg",
     "text": "It would run locally with MongoDB Compass. CRUD operation can be done through Postman. The purpose of this app is to demonstrate how to create the server side layer with express, connecting to local/remote db server, forming the db record properly by creating models and schemas with Mongoose and create a REST API with db connection! This app did not actually deploy and host but on github for demo"
+  },
+  {
+    "id": 4,
+    "displayName": "AJAX / API App",
+    "url": "https://symphonious-piroshki-e52943.netlify.app",
+    "username": "Asynchronous Programming | Transport layers",
+    "title": "Your Groceries Advisor",
+    "src": "/assets/img/weather.png",
+    "color": "linear-gradient(135deg,rgb(200, 119, 255) 10%, rgb(255, 255, 255)) 0%",
+
+    "avatar": "/assets/logo/node.svg",
+    "text": "Ajax app created by React. Calling weather API to access user's geo-location to provide weather forecast and advise the users to prepare extra groceries if bad weather is coming."
   },
   {
     "id": 5,
