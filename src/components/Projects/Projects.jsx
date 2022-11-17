@@ -44,6 +44,7 @@ function Projects({ url, src, title, style, drag, dragElastic, whileTap }) {
           class="click"
         >
           <button onClick={RedirectPage}>Click Me</button>
+          <a href="${url}">click me</a>
         </motion.div>
       </div>
     </div>

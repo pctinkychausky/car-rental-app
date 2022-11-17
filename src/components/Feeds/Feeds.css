@@ -1,3 +1,17 @@
+/* @font-face {
+  font-family: "chirp-bold";
+  src: url("../../../public/assets/font/chirp-bold-web.ttf") format("truetype");
+}
+@font-face {
+  font-family: "chirp-heavy";
+  src: url("../../../public/assets/font/chirp-heavy-web.ttf") format("truetype");
+}
+@font-face {
+  font-family: "chirp-regular";
+  src: url("../../../public/assets/font/chirp-regular-web.ttf")
+    format("truetype");
+} */
+
 .feed {
   flex: 0.47;
   border-right: 1px solid var(--twitter-background);
