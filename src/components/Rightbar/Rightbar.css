@@ -173,18 +173,6 @@
     z-index: 999;
   }
 
-  .cardsContainer {
-    border-radius: 20px;
-    width: 408px;
-    height: 580px;
-    transform-style: preserve-3d;
-    transition: box-shadow 0.5s;
-    will-change: transform;
-    border: 1px solid rbga(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    overflow: hidden;
-  }
-
   .cardWrapper {
     margin-block-start: 30px;
     margin-block-end: 30px;
