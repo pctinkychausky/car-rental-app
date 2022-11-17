@@ -10,7 +10,7 @@
     "color": "linear-gradient(135deg,rgb(200, 100, 100) 10%, rgb(255, 255, 255)) 0%",
     "backdrop-filter": "blur(10px)",
     "avatar": "/assets/logo/react.svg",
-    "text": "A MERN App with React JS to implement the presentation layer, Express and Node to make up the middle layer (Server), and MongoDB to create the database layer to develop a car rental application. The frontend layer is created by functional component React JS framework with Material UI library. \n The app allows users to login with Google sign-in and have specific permissions and roles through Auth0 authentication and authorization. And the RESTful API endpoints allow users to checkout and make/edit orders. For login details, please take reference of README.md via Github Link: https://github.com/pctinkychausky/fullstack-carapp. "
+    "text": "A MERN App with React JS to implement the presentation layer, Express and Node to make up the middle layer (Server), and MongoDB to create the database layer to develop a car rental application. The frontend layer is created by functional component React JS framework with Material UI library. The app allows users to login with Google sign-in and have specific permissions and roles through Auth0 authentication and authorization. And the RESTful API endpoints allow users to checkout and make/edit orders. For login details, please take reference of README.md via Github Link: https://github.com/pctinkychausky/fullstack-carapp. "
   },
   {
     "id": 2,
@@ -43,9 +43,8 @@
     "title": "Your Groceries Advisor",
     "src": "/assets/img/weather.png",
     "color": "linear-gradient(135deg,rgb(200, 119, 255) 10%, rgb(255, 255, 255)) 0%",
-
     "avatar": "/assets/logo/node.svg",
-    "text": "Ajax app created by React. Calling weather API to access user's geo-location to provide weather forecast and advise the users to prepare extra groceries if bad weather is coming."
+    "text": "Ajax app is created by React. Calling weather API to access user's geo-location to provide weather forecast and advise the users to prepare extra groceries if bad weather is coming.Use React to replace the browsers default actions and create a Single Page Application that's more performant and delivers a better user experience. About SPA's, components, props, state, routers, context and hooks, and; styling with Styled Components. Connect your application to external resources so you can send and receive data to access services and applications."
   },
   {
     "id": 5,
@@ -56,7 +55,7 @@
     "src": "/assets/img/dom-game.jpg",
     "color": "linear-gradient(135deg, rgb(85, 102, 84) 50%, rgb(255, 255, 255)) 0%",
     "avatar": "/assets/logo/typescript.svg",
-    "text": "This is a children game named Guess your Animals. It is a work of DOM manipulation and common JS. User have to spell the name of the animals correctly to win the game. It will also remind the players how many guesses are remaining before lose."
+    "text": "This is a children game named Guess your Animals. It is a work of DOM manipulation and common JS. User have to spell the name of the animals correctly to win the game. It will also remind the players how many guesses are remaining before lose. Create an interactive interface which responds dynamically to users and events by using JavaScript to manipulate the DOM (Document Object Model)"
   },
   {
     "id": 6,
@@ -90,6 +89,6 @@
     "src": "/assets/img/four-card.jpg",
     "color": "linear-gradient(135deg,rgb(140, 46, 123) 10%, rgb(255, 255, 255)) 0%",
     "avatar": "/assets/logo/redux.svg",
-    "text": "Four cards website clone with use of Figma design and responsive layout. CSS3 skills eg. Flex is demonstrated in this app."
+    "text": "Four cards website clone was created by taking flat design files (e.g. Figma or Sketch files) and create professional standard, pixel-perfect replications that are responsive to device screen size / orientation nd consistent across browsers."
   }
 ]
