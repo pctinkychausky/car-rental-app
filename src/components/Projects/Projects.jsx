@@ -43,8 +43,12 @@ function Projects({ url, src, title, style, drag, dragElastic, whileTap }) {
           whileTap={{ whileTap }}
           class="click"
         >
-          <button onClick={RedirectPage}>Click Me</button>
-          <a href="${url}">click me</a>
+          {/* <button onClick={RedirectPage}>Click Me</button> */}
+          <button>
+            <a className="clickTag" href={`${url}`}>
+              Click Me
+            </a>
+          </button>
         </motion.div>
       </div>
     </div>
