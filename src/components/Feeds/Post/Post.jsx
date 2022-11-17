@@ -21,22 +21,7 @@ const cardVariants = {
   // },
 };
 
-function Post({
-  url,
-  displayName,
-  username,
-  src,
-  text,
-  text1,
-  text2,
-  text3,
-  text4,
-  text5,
-  text6,
-  color,
-  avatar,
-  title,
-}) {
+function Post({ url, displayName, username, src, text, color, avatar, title }) {
   // We add this ref to card element and use in onMouseMove event ...
   // ... to get element's offset and dimensions.
   const ref = useRef();
@@ -91,13 +76,7 @@ function Post({
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p> {text}</p>
-            <p> {text1}</p>
-            <p> {text2}</p>
-            <p>{text3}</p>
-            <p>{text4}</p>
-            <p>{text5}</p>
-            <p>{text6}</p>
+            <p>{text}</p>
           </div>
         </div>
 
