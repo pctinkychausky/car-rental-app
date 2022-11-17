@@ -3,14 +3,14 @@
     "id": 1,
     "displayName": "Fullstack MERN App",
     "url": "https://fullstack-mern-car-rental.herokuapp.com/",
-    "username": "React | Hooks | Express | Node | MongoDB",
+    "username": "React | Hooks | Express | OAuth | MongoDB",
     "title": "CarHire.com",
     "src": "/assets/img/react.jpg",
     "logo": "/assets/img/react.jpg",
     "color": "linear-gradient(135deg,rgb(200, 100, 100) 10%, rgb(255, 255, 255)) 0%",
     "backdrop-filter": "blur(10px)",
     "avatar": "/assets/logo/react.svg",
-    "text": "A MERN App with React JS to implement the presentation layer, Express and Node to make up the middle layer (Server), and MongoDB to create the database layer to develop a car rental application. The frontend layer is created by functional component React JS framework with Material UI library. \n The app allows users to login with Google sign-in and have specific permissions and roles through Auth0 authentication and authorization. And the RESTful API endpoints allow users to checkout and make/edit orders. "
+    "text": "A MERN App with React JS to implement the presentation layer, Express and Node to make up the middle layer (Server), and MongoDB to create the database layer to develop a car rental application. The frontend layer is created by functional component React JS framework with Material UI library. <br/>The app allows users to login with Google sign-in and have specific permissions and roles through Auth0 authentication and authorization. And the RESTful API endpoints allow users to checkout and make/edit orders. <br/>*****User Login***** Senior Admin:senioradmin@abc.com Password: Password123 | Junior : junioradmin@abc.com Password: Password123 | customer: you can login through your google account Note: senior admin has the permission to delete the inventory in admin dashboard while junior admin only have create/read/update permission. And customer do not have permission to access admin page."
   },
   {
     "id": 2,
@@ -28,7 +28,7 @@
     "id": 3,
     "displayName": "First Server App",
     "url": "https://github.com/pctinkychausky/first-server-mongodb-restful-demo",
-    "username": "Node | Express | MongoDB | Mongoose | RESTful API",
+    "username": "Express | MongoDB | Mongoose | REST",
     "title": "First Server with a REST API tied to DB",
     "src": "/assets/img/first-server-mongodb-demo.png",
     "color": "linear-gradient(135deg,rgb(130, 158, 221) 10%, rgb(255, 255, 255)) 0%",
@@ -37,7 +37,7 @@
   },
   {
     "id": 4,
-    "displayName": "AJAX / API App",
+    "displayName": "AJAX / API / Basic React App",
     "url": "https://symphonious-piroshki-e52943.netlify.app",
     "username": "Asynchronous Programming | Transport layers",
     "title": "Your Groceries Advisor",
