@@ -198,4 +198,9 @@
   .post__headerDescription > p {
     line-height: 1.1;
   }
+
+  .cardsContainer {
+    min-width: 320px;
+    height: 460px;
+  }
 }
