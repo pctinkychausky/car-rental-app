@@ -76,7 +76,13 @@ function Post({ url, displayName, username, src, text, color, avatar, title }) {
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>{text}</p>
+            <p> {text}</p>
+            <p> {text1}</p>
+            <p> {text2}</p>
+            <p>{text3}</p>
+            <p>{text4}</p>
+            <p>{text5}</p>
+            <p>{text6}</p>
           </div>
         </div>
 
