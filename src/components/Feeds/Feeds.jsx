@@ -20,15 +20,7 @@ function Feeds() {
           src={entry.src}
           color={entry.color}
           avatar={entry.avatar}
-          text={
-            (entry.text,
-            entry.text1,
-            entry.text2,
-            entry.text3,
-            entry.text4,
-            entry.text5,
-            entry.text6)
-          }
+          text={entry.text}
           url={entry.url}
         />
       ))}
