@@ -32,7 +32,7 @@ function Rightbar() {
         <h5>https://github.com/pctinkychausky/</h5>
         <h4>
           CV ({" "}
-          <a href="https://drive.google.com/file/d/1SLhO_-aGJGBrsPiAS5cqwhBNi_gWqbXY/view?usp=sharing">
+          <a href="https://drive.google.com/file/d/1Tyrz76QUCLx6nCpTj5o380_mIt70apKj/view?usp=sharing">
             PDF verison
           </a>
           )
