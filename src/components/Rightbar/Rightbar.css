@@ -193,7 +193,15 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .rightbar__input {
+    background-color: #484848;
+  }
+
+  input::-webkit-input-placeholder {
+    background-color: #484848;
+  }
+
   .rightbar__Container {
-    color: #242424;
+    background-color: #484848;
   }
 }
