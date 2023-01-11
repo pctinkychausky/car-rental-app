@@ -191,3 +191,9 @@
     font-size: 90%;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .rightbar__Container {
+    color: #242424;
+  }
+}

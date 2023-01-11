@@ -65,3 +65,9 @@
     font-size: 2rem;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .feed__header {
+    background-color: #242424;
+  }
+}

@@ -53,3 +53,9 @@
     flex: 0.4;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .tweet__input > input {
+    background-color: #242424;
+  }
+}

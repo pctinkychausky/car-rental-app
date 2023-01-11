@@ -204,3 +204,9 @@
     height: 470px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .post__headerDescription > p {
+    color: rgba(255, 255, 255, 0.87);
+  }
+}
