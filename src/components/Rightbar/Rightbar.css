@@ -31,7 +31,7 @@
   font-family: "chirp-heavy", sans-serif;
 }
 
-.rightbar__Container > h2 {
+.rightbar__Container > h2 .Stacks {
   font-size: 18px;
   font-weight: 800;
 }
@@ -54,7 +54,7 @@
 
   .rightbar__Container {
     max-width: 70%;
-    height: 80%;
+    height: 90%;
     line-height: 1.4vh;
   }
 
@@ -62,7 +62,7 @@
     max-width: 50%;
   }
 
-  #root > div > div.rightbar > div.rightbar__Container > h2 {
+  #root > div > div.rightbar > div.rightbar__Container > h2 .Stacks {
     font-size: 1vw;
   }
 
@@ -70,7 +70,7 @@
     font-size: 0.8vw;
     line-height: 2.5vh;
   }
-  #root > div > div.rightbar > div.rightbar__Container > h5 {
+  #root > div > div.rightbar > div.rightbar__Container > h5 .Stacks > h5 {
     font-size: 0.8vw;
     line-height: 2vh;
   }
