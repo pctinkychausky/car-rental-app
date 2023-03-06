@@ -42,6 +42,8 @@
   font-family: "chirp-regular", sans-serif;
   font-weight: 400;
   color: rgb(15, 20, 25);
+  text-align: justify;
+  padding-right: 20px;
 }
 
 .post__headerText {

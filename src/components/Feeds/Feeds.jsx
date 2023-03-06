@@ -21,6 +21,16 @@ function Feeds() {
           color={entry.color}
           avatar={entry.avatar}
           text={entry.text}
+          text2={entry.text2}
+          text3={entry.text3}
+          loginDetails={entry.loginDetails}
+          customerLogin={entry.customerLogin}
+          jaLogin={entry.jaLogin}
+          saLogin={entry.saLogin}
+          github={entry.github}
+          githubLink={entry.githubLink}
+          remark={entry.remark}
+          remarkDetails={entry.remarkDetails}
           url={entry.url}
         />
       ))}

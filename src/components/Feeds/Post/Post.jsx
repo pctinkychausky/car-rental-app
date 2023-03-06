@@ -21,7 +21,26 @@ const cardVariants = {
   // },
 };
 
-function Post({ url, displayName, username, src, text, color, avatar, title }) {
+function Post({
+  url,
+  displayName,
+  username,
+  src,
+  text,
+  text2,
+  text3,
+  loginDetails,
+  customerLogin,
+  jaLogin,
+  saLogin,
+  github,
+  githubLink,
+  remarkDetails,
+  remark,
+  color,
+  avatar,
+  title,
+}) {
   // We add this ref to card element and use in onMouseMove event ...
   // ... to get element's offset and dimensions.
   const ref = useRef();
@@ -77,57 +96,23 @@ function Post({ url, displayName, username, src, text, color, avatar, title }) {
           </div>
           <div className="post__headerDescription">
             <p>{text}</p>
+            {text2 && <p>{text2}</p>}
+            {text3 && <p>{text3}</p>}
+            {loginDetails && <p>{loginDetails}</p>}
+            {customerLogin && <p>{customerLogin}</p>}
+            {jaLogin && <p>{jaLogin}</p>}
+            {saLogin && <p>{saLogin}</p>}
+            {github && <p>{github}</p>}
+            {githubLink && <p>{githubLink}</p>}
+            {remark && <p>{remark}</p>}
+            {remarkDetails && <p>{remarkDetails}</p>}
           </div>
         </div>
 
         <animated.div
           className="cardsContainer"
           ref={ref}
-          // onMouseEnter={() => setHovered(true)}
-          // onMouseMove={({ clientX, clientY }) => {
-          //   // Get mouse x position within card
-          //   const x =
-          //     clientX -
-          //     (ref.current.offsetLeft -
-          //       (window.scrollX ||
-          //         window.pageXOffset ||
-          //         document.body.scrollLeft));
-
-          //   // Get mouse y position within card
-          //   const y =
-          //     clientY -
-          //     (ref.current.offsetTop -
-          //       (window.scrollY ||
-          //         window.pageYOffset ||
-          //         document.body.scrollTop));
-
-          //   console.log("x,y", x, y);
-          //   console.log("y");
-
-          //   // Set animated values based on mouse position and card dimensions
-          //   const dampen = 100; // Lower the number the less rotation
-          //   const xys = [
-          //     -(y - ref.current.clientHeight / 2) / dampen, // rotateX
-          //     (x - ref.current.clientWidth / 2) / dampen, // rotateY
-          //     1.07, // Scale
-          //   ];
-
-          //   // Update values to animate to
-          //   setAnimatedProps({ xys: xys });
-          // }}
-          // onMouseLeave={() => {
-          //   setHovered(false);
-          //   // Set xys back to original
-          //   setAnimatedProps({ xys: [0, 0, 1] });
-          // }}
           style={{
-            // If hovered we want it to overlap other cards when it scales up
-            // zIndex: isHovered ? 2 : 1,
-            // // Interpolate function to handle css changes
-            // transform: animatedProps.xys.interpolate(
-            //   (x, y, s) =>
-            //     `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
-            // ),
             background: color,
           }}
         >
