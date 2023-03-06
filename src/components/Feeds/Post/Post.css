@@ -89,16 +89,23 @@
   width: auto;
 }
 
-#root > div > div.feed > div:nth-child(4) > div.post__avatar > div > img {
-  height: 150%;
-  width: 150%;
+#root > div > div.feed > div:nth-child(5) > div.post__avatar > div > img {
+  height: 80%;
+  width: auto;
 }
-
-#root > div > div.feed > div:nth-child(8) > div.post__avatar > div > img {
-  transform: scale(0.8);
+#root > div > div.feed > div:nth-child(6) > div.post__avatar > div > img {
+  height: 100%;
+  width: auto;
 }
 
 #root > div > div.feed > div:nth-child(7) > div.post__avatar > div > img {
+  height: 85%;
+  width: auto;
+}
+
+#root > div > div.feed > div:nth-child(8) > div.post__avatar > div > img {
+  height: 190%;
+  width: auto;
 }
 
 .CardsMastercontainer {
