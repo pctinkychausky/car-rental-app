@@ -98,6 +98,7 @@ function Post({
             <p>{text}</p>
             {text2 && <p>{text2}</p>}
             {text3 && <p>{text3}</p>}
+            {text4 && <p>{text4}</p>}
             {loginDetails && <p>{loginDetails}</p>}
             {customerLogin && <p>{customerLogin}</p>}
             {jaLogin && <p>{jaLogin}</p>}
@@ -105,7 +106,8 @@ function Post({
             {github && <p>{github}</p>}
             {githubLink && <p>{githubLink}</p>}
             {remark && <p>{remark}</p>}
-            {remarkDetails && <p>{remarkDetails}</p>}
+            {remarkDetails1 && <p>{remarkDetails1}</p>}
+            {remarkDetails2 && <p>{remarkDetails2}</p>}
           </div>
         </div>
 
