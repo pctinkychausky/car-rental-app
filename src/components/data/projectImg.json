@@ -3,7 +3,7 @@
     "id": 1,
     "displayName": "Fullstack MERN App",
     "url": "https://lively-sunset-1722.fly.dev/",
-    "username": "React | Hooks | Express | OAuth | MongoDB",
+    "username": "React | Docker | Express | OAuth | MongoDB | Hooks",
     "title": "CarHire.com",
     "src": "/assets/img/react.jpg",
     "logo": "/assets/img/react.jpg",
@@ -13,6 +13,7 @@
     "text": "React JS to implement the presentation layer, Express and Node to make up the middle layer (Server), and MongoDB to create the database layer to develop a car rental application. ",
     "text2": "The frontend layer is created by functional component React JS framework with Material UI library. The app allows users to login with Google sign-in (SSO) and have specific permissions and roles through Auth0 authentication and authorization. Users could also pick their preferred city and date for car booking. List of cars are presented based on the above selections.",
     "text3": "Backend layer was created by Node.js and Express.js create the API for CRUD operations allowing admin to create, delete, update, read the cars inventories. The RESTful API endpoints allow users to checkout and make/edit orders. Mongoose create the model and interact with MongoDB datebase.",
+    "text4": "This app was deployed to Fly.io using Docker technology for containerized architecture that enables fast and efficient scaling.",
     "loginDetails": "Login details:",
     "customerLogin": "Customer login: your google account or create your own through the website.",
     "jaLogin": "Junior admin login: junioradmin@abc.com password: Password123 (with permission to read, add, update cars)",
@@ -20,7 +21,8 @@
     "github": "Github Link:",
     "githubLink": "https://github.com/pctinkychausky/fullstack-carapp",
     "remark": "Remark:",
-    "remarkDetails": "It might require 10-20sec to access the link below. Reason: Subscripted to cheapest Eco Dynos Plan of Heroku (USD5/month). That sleeping dyno receives no web traffic in a 30-minute period, it sleeps and the dyno becomes active again after a short delay."
+    "remarkDetails1": "Problem of previous verison on Heroku: It might require 10-20sec to access the link below. Reason: Subscripted to cheapest Eco Dynos Plan of Heroku (USD5/month). That sleeping dyno receives no web traffic in a 30-minute period, it sleeps and the dyno becomes active again after a short delay.",
+    "remarkDetails2": "Solution/ New verison: Fly.io's containerized architecture built based on Docker containers allow the app run in a highly efficient and scalable manner. We can now access to the app immediately without any delay."
   },
   {
     "id": 2,

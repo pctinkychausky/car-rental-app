@@ -23,6 +23,7 @@ function Feeds() {
           text={entry.text}
           text2={entry.text2}
           text3={entry.text3}
+          text4={entry.text4}
           loginDetails={entry.loginDetails}
           customerLogin={entry.customerLogin}
           jaLogin={entry.jaLogin}
@@ -30,7 +31,8 @@ function Feeds() {
           github={entry.github}
           githubLink={entry.githubLink}
           remark={entry.remark}
-          remarkDetails={entry.remarkDetails}
+          remarkDetails1={entry.remarkDetails1}
+          remarkDetails2={entry.remarkDetails2}
           url={entry.url}
         />
       ))}
