@@ -14,16 +14,16 @@ function Rightbar() {
       <div className="rightbar__Container">
         <h2 className="about">About Me</h2>
         <h3>
-          Hello! My name is Jason Chau and I am looking for a Junior Web
+          Hello! My name is Tin Chau and I am looking for a Fullstack/Frontend
           Developer Job.
+    <h5>This portfolio is built with React.js.</h5>
         </h3>
-        <div>
+        <div className="stack-container">
           <h2 className="Stacks">Stacks</h2>
           <h5>
-            HTML5 | CSS3 | Responsive design | Flexbox/CSS Grid | SASS | CSS
-            frameworks Bootstrap | TailwindCSS | OAuth | SSO
+            HTML5 | CSS3 | Responsive design | Flexbox/CSS Grid | SASS | Bootstrap 4/5 | TailwindCSS | OAuth | SSO
           </h5>
-          <h5>JavaScript: ES6+ | AJAX & API | REST | GraphQL | OOP</h5>
+          <h5>PHP7/8 | Laravel10 with Vite</h5>
           <h5>
             React | Next.js | Vue2 |Nuxt,js| TailwindCSS | hooks, context,
             Material UI
@@ -34,7 +34,7 @@ function Rightbar() {
             | Firebase |
           </h5>
           <h5>
-            DevOps | Deployment | Docker & Kubernetes | Heroku (inc. pipelines)|
+            DevOps | Deployment | Docker | Heroku (inc. pipelines)|
             serverless | Netlify
           </h5>
           <h5>Testing: TypeScript, Cypress, Vitest, Vite</h5>
